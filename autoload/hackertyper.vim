@@ -25,6 +25,10 @@ function! hackertyper#startHackerTyper()
   endwhile
 
   exe "inoremap <expr> <buffer> <Space> hackertyper#hackerChar()"
+  exe "inoremap <expr> <buffer> <Tab>   hackertyper#hackerChar()"
+  exe "inoremap <expr> <buffer> <BS>    hackertyper#hackerChar()"
+  exe "inoremap <expr> <buffer> \\      hackertyper#hackerChar()"
+  exe "inoremap <expr> <buffer> \|      hackertyper#hackerChar()"
 
   startinsert
 
