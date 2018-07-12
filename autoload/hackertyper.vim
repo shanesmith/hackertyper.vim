@@ -10,6 +10,7 @@ function! hackertyper#startHackerTyper()
   setlocal nosmartindent
   setlocal indentexpr=
   setlocal buftype=nofile
+  setlocal formatoptions=
 
   let b:hacker_typer_buffer = getline(0, "$")
 
